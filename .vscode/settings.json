@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/32434f20-c709-4cc3-bc55-3947436d73ab/resourceGroups/yogifi_teacher/providers/Microsoft.Web/sites/yogifi-teacherportal",
+    "appService.deploySubpath": "."
+}

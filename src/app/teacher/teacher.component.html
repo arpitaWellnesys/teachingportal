@@ -1,0 +1,40 @@
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <app-sidebar></app-sidebar>
+    <div id="page-content-wrapper">
+      <app-topbar></app-topbar>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 card">
+            <div class="card-header">
+              <h3>Teacher List</h3>
+            </div>
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Email id</th>
+                    <th>Type</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let l of list; let i=index;">
+                    <td>{{i+1}}</td>
+                    <td>{{l.email}}</td>
+                    <td>{{l.user_type}}</td>
+                    <td>
+                      <a href="javascript:void(0);" class="btn btn-info mr-2" (click)="verifyTeacher(l._id,1)">Approve</a> 
+                      <a href="javascript:void(0);" class="btn btn-danger" (click)="verifyTeacher(l._id,2)">Decline</a> 
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
